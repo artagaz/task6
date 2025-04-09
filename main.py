@@ -15,8 +15,6 @@
 # bell.sound()
 # bell.sound()
 # bell.sound()
-import ast
-from email.policy import default
 
 
 # 2
@@ -47,6 +45,23 @@ from email.policy import default
 # print(balance.result())
 
 # 3
+# class Selector:
+#     def __init__(self, lst):
+#         self.lst = lst
+#
+#     def get_odds(self):
+#         return [num for num in self.lst if num % 2 == 1]
+#
+#     def get_evens(self):
+#         return [num for num in self.lst if num % 2 == 0]
+#
+#
+# values = [11, 12, 13, 14, 15, 16, 22, 44, 66]
+# selector = Selector(values)
+# odds = selector.get_odds()
+# evens = selector.get_evens()
+# print(' '.join(map(str, odds)))
+# print(' '.join(map(str, evens)))
 
 # 4
 # class Point:
@@ -88,6 +103,23 @@ from email.policy import default
 # for i in range(len(rl)):
 #     print(rl[i])
 
+# 6
+# class SparseArray:
+#     def __init__(self):
+#         self.data = {}
+#
+#     def __getitem__(self, item):
+#         return self.data.get(item, 0)
+#
+#     def __setitem__(self, key, value):
+#         self.data[key] = value
+#
+# arr = SparseArray()
+# arr[1] = 10
+# arr[8] = 20
+# for i in range(10):
+#     print('arr[{}] = {}'.format(i, arr[i]))
+
 # 9
 # class Triangle:
 #     def __init__(self, a, b, c):
@@ -128,6 +160,51 @@ from email.policy import default
 #
 # a = CubeSummator()
 # print(a.sum(5))
+
+# 11
+
+# 12
+# class A:
+#     def __init__(self):
+#         pass
+#
+#     def __str__(self):
+#         return 'A.__str__method'
+#
+#     def hello(self):
+#         print('Hello')
+#
+#
+# class B:
+#     def __init__(self):
+#         pass
+#
+#     def __str__(self):
+#         return 'B.__str__method'
+#
+#     def good_evening(self):
+#         print('Good evening')
+#
+#
+# class C(A, B):
+#     def __init__(self):
+#         super().__init__()
+#
+#
+# class D(B, A):
+#     def __init__(self):
+#         super().__init__()
+#
+#
+# c = C()
+# c.hello()
+# c.good_evening()
+# d = D()
+# d.hello()
+# d.good_evening()
+# print(c)
+# print(d)
+
 
 # 15
 # class Digits:
